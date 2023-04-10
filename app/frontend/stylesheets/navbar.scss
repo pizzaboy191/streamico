@@ -1,0 +1,16 @@
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #e3e4db;
+  }
+
+  .nav-link:hover {
+    color: #3b252c;
+  }

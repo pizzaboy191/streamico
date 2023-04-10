@@ -4,3 +4,75 @@
 // :root {
 //   --font-size: revert;
 // }
+/* app/javascript/stylesheets/index_styles.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #8bc6ec, #9599e2);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.newsfeed {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.video-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+  transition: all 0.2s;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.play-button {
+  background: linear-gradient(135deg, #8bc6ec, #9599e2);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  margin-top: auto;
+  transition: all 0.2s;
+}
+
+.play-button:hover {
+  background: linear-gradient(135deg, #9599e2, #8bc6ec);
+}

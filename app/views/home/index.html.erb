@@ -1,3 +1,21 @@
-<% provide(:title, "Home") %>
-<p>Find me in app/views/home/index.html.erb</p>
-<p>Stimulus says, <i data-controller=hello></i></p>
+<!-- index.html.erb -->
+<div class="container">
+
+  <section class="newsfeed">
+    <h2>Newsfeed</h2>
+    <!-- Add your newsfeed content here -->
+  </section>
+
+  <section class="video-container">
+    <% if @videos.present? %>
+      <% @videos.each do |video| %>
+        <div class="video-card">
+          <%= image_tag video.thumbnail_url, class: 'video-thumbnail' %>
+          <h3><%= video.title %></h3>
+          <p><%= video.description %></p>
+          <%= link_to 'Watch', video_path(video), class: 'play-button' %>
+        </div>
+      <% end %>
+    <% end %>
+  </section>
+</div>
